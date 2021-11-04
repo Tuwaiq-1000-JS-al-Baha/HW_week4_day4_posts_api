@@ -1,0 +1,35 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    background-color: rgba(226, 226, 226, 0.295);
+}
+
+.add {
+    display: flex;
+    border: 1px solid gray;
+    padding: 20px;
+    width: 300px;
+    background-color: rgba(218, 218, 218, 0.733);
+}
+.add .lables{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    gap: 4px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 4px;
+}
+button{
+    margin-left: 20px;
+    height: 10%;
+}
+.editForm {
+    display: none;
+}
