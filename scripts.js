@@ -31,11 +31,12 @@ function getPosts() {
             <h3>body: <span>${body}</span></h3>
             <img src = "${image}" width=200px height=200px alt='avatar'>
             <h4>owner: <span>${owner}</span></h4>
+            <p> comment: <span>${comment}</span></p>
             <button onclick="deletePosts('${id}')">Delete</button>
             <button onclick="editPosts(this)">Edit</button>
             <button onclick="postComment(this)">Add Comment</button>
             <form id="input-comment">
-            <textarea name="comment"> ${comment}</textarea>
+            <textarea name="comment"></textarea>
             <input type="submit" value="submit" onsubmit="submit(event, this, ${id})">
             </form>
             </div>
@@ -72,6 +73,7 @@ function addPosts(e) {
     const body = formAdd.elements.body.value
     const image = formAdd.elements.image.value
     const owner = formAdd.elements.owner.value
+    const comment = formAdd.elements.comment.value
 
 
     const postsBody = {
@@ -79,6 +81,7 @@ function addPosts(e) {
         body: body,
         image: image,
         owner: owner,
+        comment: comment
 
 
     }
@@ -110,6 +113,7 @@ function editPosts(editButton) {
     const body = postsInfo.querySelector("h3 span").innerHTML
     const image = postsInfo.querySelector("img").src
     const owner = postsInfo.querySelector("h4 span").innerHTML
+
 
 
 
@@ -155,9 +159,11 @@ function postComment(commentButton) {
 
     const input = commentButton.nextElementSibling
     input.style.display = 'inline'
-    const postInfo = commentButton.parentElement
+    const postInfo = commentButton
+    postInfo.style.display = 'none'
 
     const comment = postInfo.querySelector("#input-comment").innerHTML
+
 
 
 
@@ -168,8 +174,7 @@ function submit(e, sumbitButton, id) {
     e.preventDefault()
 
 
-    const a = sumbitButton.parentElement
-    a.style.display = 'inline'
+
 
     const title = postInfo.elements.title.value
     const body = postInfo.elements.body.value
