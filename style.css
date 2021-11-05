@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box; 
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0px 200px;
+    background-color: beige;
+    
+}
+
+.form-posts {
+    display: none;
+}
+
+#input-comment {
+    display: none;
+}
+.posts-list {
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    color: rgb(47, 122, 97);
+    
+}
+img {
+    border-radius: 50%;
+}
