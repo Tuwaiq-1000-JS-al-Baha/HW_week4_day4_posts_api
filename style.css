@@ -1,0 +1,14 @@
+.post-form {
+    display: none;
+}
+.post-item {
+    background-color: rgba(192, 132, 169, 0.24);
+    border: 2px solid rosybrown;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+body{
+    background-color:rgb(199, 129, 143);
+}
