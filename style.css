@@ -1,0 +1,16 @@
+.post-info{
+    background-color:bisque;
+    border: none;
+    padding: 20px;
+}
+.post-Form{
+    display: none;
+}
+.form-add{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 4px;
+    font-size: 25px;
+}
+
