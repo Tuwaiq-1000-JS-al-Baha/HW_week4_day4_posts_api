@@ -1,0 +1,8 @@
+.post-form {
+    display: none;
+}
+
+.post-form{
+    background-color: azure;
+    border: 1px solid blue;
+}
