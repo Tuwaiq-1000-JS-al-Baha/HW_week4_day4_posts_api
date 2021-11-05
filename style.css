@@ -1,0 +1,8 @@
+.post-item{
+    background-color: rgb(243, 217, 221);
+    border: 2px solid rgb(182, 79, 79);
+}
+
+.post-form{
+    display: none;
+}
