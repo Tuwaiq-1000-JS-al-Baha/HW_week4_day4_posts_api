@@ -73,7 +73,7 @@ function addPosts(e) {
     const body = formAdd.elements.body.value
     const image = formAdd.elements.image.value
     const owner = formAdd.elements.owner.value
-    const comment = formAdd.elements.comment.value
+
 
 
     const postsBody = {
@@ -81,7 +81,7 @@ function addPosts(e) {
         body: body,
         image: image,
         owner: owner,
-        comment: comment
+
 
 
     }
