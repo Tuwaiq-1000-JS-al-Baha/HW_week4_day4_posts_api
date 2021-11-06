@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Add a post:</h1>
+
+    <form onsubmit="addPosts(event)" class="form-add">
+        <label>Title:</label><input type="text" name="title">
+        <br>
+        <label>Body:</label><input type="text" name="body">
+        <br>
+        <label>Image:</label><input type="url" name="image">
+        <br>
+        <label>Owner:</label><input type="text" name="owner">
+        <br>
+        <button>Add post</button>
+    </form>
+    <!-- <form onsubmit="addcomments(event,postId)" class="comments-add">
+        <label>comment:</label><input type="text" name="comment">
+        <label>Owner:</label><input type="text" name="ownerComment">
+        <button>Add comment</button>
+    </form> -->
+
+    <div class="posts-list">
+        <!-- <div class="comments-list">
+
+        </div> -->
+
+    </div>
+</body>
+
+</html>
