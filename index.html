@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post hw</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="staly.css">
+
+</head>
+
+<body>
+
+    <h1>Add post;</h1>
+    <form onsubmit="addPost(event)"class="form" >
+        <label>Id</label> <input type="text" name="id">
+        <br>
+        <label>Title</label><input type="text" name="title">
+        <br>
+        <label>Image</label><input type="url" name="image">
+        <br>
+        <label>Body</label> <input type="text" name="body">
+        <br>
+        <label>owner</label><input type="text" name="owner">
+        <br>
+        <button type="submit"> Add POST</button>
+
+    </form>
+
+
+    <button onclick="click1(this)">Click here</button>
+
+    <h1>posts:</h1>
+    <div class="post-list">
+
+    </div>
+</body>
+
+</html>
